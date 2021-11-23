@@ -1,0 +1,293 @@
+<style>
+    html,
+    body {
+        min-width: 290px;
+        color: #4d4e53;
+        background-color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+    #navbar {
+        position: fixed;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: blue;
+    }
+
+    header {
+        color: green;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: thin;
+    }
+
+    #main-doc header {
+        text-align: left;
+        margin: 0px;
+    }
+
+    #navbar ul {
+        height: 88%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #navbar li {
+        color: #4d4e53;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+    }
+
+    #navbar a {
+        display: block;
+        padding: 10px 30px;
+        color: orange;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+    }
+
+    section article {
+        color: #4d4e53;
+        margin: 15px;
+        font-size: 0.96em;
+    }
+
+    section li {
+        margin: 15px 0px 0px 20px;
+    }
+
+
+
+    @media only screen and (max-width: 815px) {
+
+        /* For mobile phones: */
+        #navbar ul {
+            border: 1px solid;
+            height: 207px;
+        }
+
+        #navbar {
+            background-color: white;
+            position: absolute;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-height: 275px;
+            border: none;
+            z-index: 1;
+            border-bottom: 2px solid;
+        }
+
+        #main-doc {
+            position: relative;
+            margin-left: 0px;
+            margin-top: 270px;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        #main-doc {
+            margin-left: -10px;
+        }
+    }
+</style>
+<nav class="nav-bar" id="navbar">
+    <header>Web development</header>
+    <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+        <li><a class="nav-link" href="#HTML">HTML</a></li>
+        <li><a class="nav-link" href="#CSS">CSS</a></li>
+        <li><a class="nav-link" href="#Javascript">Javascript</a></li>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introducion</header>
+        <article>
+            <p>
+                Web development is the work involved in developing a website for the Internet (World Wide Web) or an
+                intranet (a private network).[1] Web development can range from developing a simple single static page
+                of plain text to complex web applications, electronic businesses, and social network services. A more
+                comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web
+                design, Web content development, client liaison, client-side/server-side scripting, Web server and
+                network security configuration, and e-commerce development.</p>
+            <p>
+
+                Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web
+                sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make
+                content changes easier and available with basic technical skills.</p>
+            <p>
+
+                For larger organizations and businesses, Web development teams can consist of hundreds of people (Web
+                developers) and follow standard methods like Agile methodologies while developing Web sites. Smaller
+                organizations may only require a single permanent or contracting developer, or secondary assignment to
+                related job positions such as a graphic designer or information systems technician. Web development may
+                be a collaborative effort between departments rather than the domain of a designated department. There
+                are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack
+                developer. Front-end developers are responsible for behavior and visuals that run in the user browser,
+                while back-end developers deal with the servers.</p>
+        </article>
+    </section>
+    <section class="main-section" id="Prerequisites">
+        <header>Prerequisites</header>
+        <article>
+            <p>These are the things that you should know before starting to learn web development</p>
+            <ol>
+                <li>knowing the difference between front-end development and back-end development. You’ll end up knowing
+                    a bit of both, but most specialise in one or the other. As for how to decide which way to go:
+                    back-end handles the ins and outs of data (where you’re more likely to run into things like
+                    algorithms, if you enjoy maths and logics), while front-end presents them in a user-friendly and
+                    creative way (if you like UI/design/3d animations…)</li>
+
+                <li>Just like with any other programming job, it's more about problem solving than it is about non-stop
+                    code generation. Take front-end development as an example: more than anything else you'll find
+                    yourself struggling with all kinds of weird compatibility issues, because unlike IOS/Android
+                    development, something working on one platform never ever equals to it working on all (let's not
+                    talk about IE the evil). It could be confusing and frustrating at first, but this part gets better
+                    with experience. However even with experience you'll still run into all kinds of weird issues daily
+                    anyway, so if you enjoy solving problems you'll likely enjoy web-development.</li>
+
+                <li>Things move fast with web-development. Really fast. With ECMAScript standards changing, browsers
+                    updating, tools and frameworks going in and out of style... It's a never-ending journey of new
+                    knowledge absorbing. Which doesn't necessarily mean you'll need to learn them all, but it does
+                    require curiosity and an open mind about learning new things.</li>
+
+                <li>And something on the actual learning part I wish someone had told me two years ago:
+
+                    <p>When you start, you'll be tempted to spend days or even weeks going through the list of all HTML
+                        tags/attributes, CSS properties and jQuery functions, take notes and try reciting them before
+                        you do anything else... Don't. For one thing, it's overwhelmingly scary how much you seemingly
+                        need to remember to do the job. For another, it's only psychologically satisfying since you seem
+                        to have done a lot of work (same with video watching), but it doesn't really yield much effect
+                        to go through details in the beginning--you'll likely forget the parameter and the detailed
+                        usage of a specific function in days.</p>
+                </li>
+                <li>you can follow all the above things mentioned and be determined to learn web development,Happy
+                    learning!</li>
+            </ol>
+        </article>
+    </section>
+    <section class="main-section" id="HTML">
+        <header>HTML</header>
+        <article>
+            <p>
+                HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web
+                browsers how to structure the web pages you visit. It can be as complicated or as simple as the web
+                developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark
+                up different parts of content to make it appear or act in a certain way. The enclosing tags can make
+                content into a hyperlink to connect to another page, italicize words, and so on. For example, consider
+                the following line of text:
+                <code><p>My cat is very grumpy</p></code>this piece of text can be italicised or could be highlited or
+                in other words marked using the various tags provided in HTML.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="CSS">
+        <header>CSS</header>
+        <article>
+            <p>
+                Cascading Stylesheets — or CSS — is the first technology you should start learning after HTML. While
+                HTML is used to define the structure and semantics of your content, CSS is used to style it and lay it
+                out. For example, you can use CSS to alter the font, color, size, and spacing of your content, split it
+                into multiple columns, or add animations and other decorative features.
+
+                This topic contains the following modules, in a suggested order for working through them. You should
+                definitely start with the first one.
+
+                CSS first steps
+                CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font,
+                color, size, and spacing of your content, split it into multiple columns, or add animations and other
+                decorative features. This module provides a gentle beginning to your path towards CSS mastery with the
+                basics of how it works, what the syntax looks like, and how you can start using it to add styling to
+                HTML.</p>
+
+            <h4> CSS building blocks</h4>
+            <p>This module carries on where CSS first steps left off — now you've gained familiarity with the language
+                and its syntax, and got some basic experience with using it, its time to dive a bit deeper. This module
+                looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling
+                backgrounds and borders, debugging, and lots more.
+
+                The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the
+                essential theory, before moving on to more specific disciplines like text styling and CSS layout.</p>
+
+            <h4> Styling text</h4>
+            <p>
+                With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling
+                text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals,
+                including setting font, boldness, italics, line and letter spacing, drop shadows and other text
+                features. We round off the module by looking at applying custom fonts to your page, and styling lists
+                and links.</p><code>text can be <em>italicised</em> like this</code>
+
+            <h4>CSS layout</h4>
+            <p>
+                At this point we've already looked at CSS fundamentals, how to style text, and how to style and
+                manipulate the boxes that your content sits inside. Now it's time to look at how to place your boxes in
+                the right place in relation to the viewport, and one another. We have covered the necessary
+                prerequisites so we can now dive deep into CSS layout, looking at different display settings, modern
+                layout tools like flexbox, CSS grid, and positioning, and some of the legacy techniques you might still
+                want to know about.For example to create a flexbox we can use this code:<br>
+                <code>display:flexbox; <br>width:100%;</code>
+            </p>
+
+            <h5> here are a few examples of code that can be used to design a web page</h5>
+            <code>
+      header{<br>
+      font-family:ariel;<br>
+      background-color:red;<br>
+      color:white;<br>
+      display:flex;<br>
+      width:100%<br>
+      }</code>
+            <p>this would enable the user to customize the CSS of the header as he wishes</p>
+        </article>
+    </section>
+    <section class="main-section" id="Javascript">
+        <header>Javascript</header>
+        <article>
+            <p>
+                To get started with writing JavaScript, open the Scratchpad and write your
+                first "Hello world" JavaScript code:<br>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code><br>
+
+                Select the code in the pad and hit Ctrl+R to watch it unfold in your
+                browser!
+            </p>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
+                language resembles Java but does not have Java's static typing and strong type checking. JavaScript
+                follows most Java expression syntax, naming conventions and basic control-flow constructs which was the
+                reason why it was renamed from LiveScript to JavaScript.</p>
+            <p>
+                In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a
+                runtime system based on a small number of data types representing numeric, Boolean, and string values.
+                JavaScript has a prototype-based object model instead of the more common class-based object model. The
+                prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual
+                objects. JavaScript also supports functions without any special declarative requirements. Functions can
+                be properties of objects, executing as loosely typed methods.</p>
+            <p>
+                JavaScript is a very free-form language compared to Java. You do not have to declare all variables,
+                classes, and methods. You do not have to be concerned with whether methods are public, private, or
+                protected, and you do not have to implement interfaces. Variables, parameters, and function return types
+                are not explicitly typed</p>
+        </article>
+    </section>
+</main>
